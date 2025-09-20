@@ -10,15 +10,8 @@ A professional cybersecurity blog and research platform built with [Astro](https
 
 ## About
 
-This is the personal cybersecurity blog and research platform of **Kamrul Hassan**, a Cybersecurity Engineer and Security Researcher recognized by major organizations including Microsoft, Sony, and various government agencies.
+This is the personal cybersecurity blog and research platform of **Kamrul Hassan**, a Cybersecurity Engineer and Security Researcher.
 
-## Professional Recognition
-
-- **Microsoft**: Recognized for responsible vulnerability disclosure
-- **Sony**: Acknowledged for identifying critical API security flaws
-- **Dutch Government**: Credited for responsible disclosure of cybersecurity issues
-- **Visma**: Listed in official Hall of Fame for application security contributions
-- **Singapore Government**: Recognized for reporting critical web vulnerabilities
 
 ## ✨ Features
 
