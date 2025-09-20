@@ -5,7 +5,7 @@ description: "Practical strategies and techniques for effective bug bounty hunti
 tags: [Bug Bounty, Web Security, Penetration Testing, Security Research]
 category: Security Research
 draft: false
-image: ./bug-bounty-tips.jpg
+image: ""
 ---
 
 # Bug Bounty Hunting: Essential Tips for Success

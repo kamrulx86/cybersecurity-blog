@@ -5,7 +5,7 @@ description: "Exploring the unique security challenges in IoT ecosystems and pra
 tags: [IoT Security, Penetration Testing, Research, Embedded Systems]
 category: Research
 draft: false
-image: ./iot-security.jpg
+image: ""
 ---
 
 # IoT Security Research: Challenges and Solutions

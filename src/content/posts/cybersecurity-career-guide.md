@@ -5,7 +5,7 @@ description: "Essential steps and strategies for launching a successful cybersec
 tags: [Cybersecurity, Career, Professional Development, Security]
 category: Career
 draft: false
-image: ./cybersecurity-career.jpg
+image: ""
 ---
 
 # Building a Career in Cybersecurity: A Practical Guide
