@@ -1,0 +1,231 @@
+/* Cybersecurity Professional Theme */
+:root {
+  /* Primary colors - Professional blue theme */
+  --hue: 220;
+  
+  /* Cybersecurity-inspired color palette */
+  --primary: oklch(0.6 0.15 var(--hue)); /* Deep professional blue */
+  --primary-hover: oklch(0.65 0.18 var(--hue));
+  --primary-active: oklch(0.7 0.2 var(--hue));
+  
+  /* Security-themed accent colors */
+  --accent-success: oklch(0.65 0.15 140); /* Green for secure/safe */
+  --accent-warning: oklch(0.75 0.15 60);  /* Amber for warnings */
+  --accent-danger: oklch(0.65 0.15 20);   /* Red for threats */
+  --accent-info: oklch(0.7 0.12 200);     /* Cyan for information */
+  
+  /* Background colors - Clean and professional */
+  --page-bg: oklch(0.98 0.01 var(--hue));
+  --card-bg: oklch(1 0 0);
+  --float-panel-bg: oklch(1 0 0);
+  --codeblock-bg: oklch(0.96 0.01 var(--hue));
+  --codeblock-topbar-bg: oklch(0.94 0.01 var(--hue));
+  
+  /* Dark mode colors */
+  --dark-page-bg: oklch(0.08 0.01 var(--hue));
+  --dark-card-bg: oklch(0.12 0.01 var(--hue));
+  --dark-float-panel-bg: oklch(0.12 0.01 var(--hue));
+  --dark-codeblock-bg: oklch(0.15 0.01 var(--hue));
+  --dark-codeblock-topbar-bg: oklch(0.18 0.01 var(--hue));
+  
+  /* Text colors */
+  --text-primary: oklch(0.15 0.01 var(--hue));
+  --text-secondary: oklch(0.4 0.01 var(--hue));
+  --text-muted: oklch(0.6 0.01 var(--hue));
+  
+  /* Dark mode text */
+  --dark-text-primary: oklch(0.9 0.01 var(--hue));
+  --dark-text-secondary: oklch(0.7 0.01 var(--hue));
+  --dark-text-muted: oklch(0.5 0.01 var(--hue));
+  
+  /* Button colors */
+  --btn-regular-bg: oklch(0.95 0.01 var(--hue));
+  --btn-regular-bg-hover: oklch(0.9 0.01 var(--hue));
+  --btn-regular-bg-active: oklch(0.85 0.01 var(--hue));
+  --btn-content: oklch(0.3 0.01 var(--hue));
+  
+  /* Dark mode buttons */
+  --dark-btn-regular-bg: oklch(0.2 0.01 var(--hue));
+  --dark-btn-regular-bg-hover: oklch(0.25 0.01 var(--hue));
+  --dark-btn-regular-bg-active: oklch(0.3 0.01 var(--hue));
+  --dark-btn-content: oklch(0.8 0.01 var(--hue));
+  
+  /* Link colors */
+  --link-underline: oklch(0.7 0.01 var(--hue));
+  --link-hover: var(--primary);
+  --link-active: var(--primary-active);
+  
+  /* Border and divider colors */
+  --border-color: oklch(0.9 0.01 var(--hue));
+  --dark-border-color: oklch(0.2 0.01 var(--hue));
+  --meta-divider: oklch(0.7 0.01 var(--hue));
+  
+  /* Selection colors */
+  --selection-bg: oklch(0.8 0.1 var(--hue));
+  
+  /* Security-themed gradients */
+  --security-gradient: linear-gradient(135deg, 
+    oklch(0.6 0.15 var(--hue)) 0%, 
+    oklch(0.7 0.12 calc(var(--hue) + 20)) 100%);
+  
+  --threat-gradient: linear-gradient(135deg, 
+    oklch(0.65 0.15 20) 0%, 
+    oklch(0.75 0.12 40) 100%);
+}
+
+/* Dark mode overrides */
+.dark {
+  --page-bg: var(--dark-page-bg);
+  --card-bg: var(--dark-card-bg);
+  --float-panel-bg: var(--dark-float-panel-bg);
+  --codeblock-bg: var(--dark-codeblock-bg);
+  --codeblock-topbar-bg: var(--dark-codeblock-topbar-bg);
+  --text-primary: var(--dark-text-primary);
+  --text-secondary: var(--dark-text-secondary);
+  --text-muted: var(--dark-text-muted);
+  --btn-regular-bg: var(--dark-btn-regular-bg);
+  --btn-regular-bg-hover: var(--dark-btn-regular-bg-hover);
+  --btn-regular-bg-active: var(--dark-btn-regular-bg-active);
+  --btn-content: var(--dark-btn-content);
+  --border-color: var(--dark-border-color);
+}
+
+/* Cybersecurity-themed components */
+.security-badge {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+  background: var(--security-gradient);
+  color: white;
+}
+
+.threat-badge {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+  background: var(--threat-gradient);
+  color: white;
+}
+
+/* Professional typography enhancements */
+.professional-heading {
+  @apply font-bold text-2xl md:text-3xl;
+  background: var(--security-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Code block styling for security tools */
+.security-code {
+  @apply font-mono text-sm;
+  background: var(--codeblock-bg);
+  border-left: 4px solid var(--primary);
+}
+
+/* Professional card styling */
+.professional-card {
+  @apply rounded-lg border border-gray-200 dark:border-gray-700;
+  background: var(--card-bg);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.dark .professional-card {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+/* Security status indicators */
+.status-secure {
+  @apply text-green-600 dark:text-green-400;
+}
+
+.status-warning {
+  @apply text-yellow-600 dark:text-yellow-400;
+}
+
+.status-critical {
+  @apply text-red-600 dark:text-red-400;
+}
+
+/* Professional navigation styling */
+.nav-professional {
+  @apply backdrop-blur-sm bg-white/80 dark:bg-gray-900/80;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Enhanced button styling */
+.btn-security {
+  @apply px-6 py-3 rounded-lg font-medium transition-all duration-200;
+  background: var(--security-gradient);
+  color: white;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
+}
+
+.btn-security:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Professional spacing and layout */
+.section-spacing {
+  @apply py-16 md:py-24;
+}
+
+.container-professional {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Security-themed animations */
+@keyframes security-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.security-pulse {
+  animation: security-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Professional scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--codeblock-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-hover);
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: var(--dark-codeblock-bg);
+}
+
+/* Professional focus states */
+.focus-professional:focus {
+  @apply outline-none ring-2 ring-blue-500 ring-opacity-50;
+}
+
+/* Security-themed borders */
+.border-security {
+  border-color: var(--primary);
+}
+
+.border-threat {
+  border-color: var(--accent-danger);
+}
+
+.border-warning {
+  border-color: var(--accent-warning);
+}
+
+.border-success {
+  border-color: var(--accent-success);
+}

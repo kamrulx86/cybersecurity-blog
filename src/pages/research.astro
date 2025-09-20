@@ -1,0 +1,251 @@
+---
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+import { Icon } from "astro-icon";
+---
+
+<MainGridLayout title="Research" description="Cybersecurity research projects, findings, and publications by Kamrul Hassan">
+    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
+        <div class="card-base z-10 px-9 py-6 relative w-full">
+            <h1 class="professional-heading mb-6">Research & Publications</h1>
+            
+            <div class="space-y-8">
+                <!-- Current Research -->
+                <section class="professional-card p-6">
+                    <h2 class="text-xl font-bold mb-4 flex items-center">
+                        <Icon name="fa6-solid:flask" class="mr-3 text-blue-600" />
+                        Current Research
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <h3 class="font-semibold text-lg">IoT Security Assessment</h3>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Comprehensive penetration testing and vulnerability assessment of Internet of Things devices, 
+                                focusing on IP cameras, smart home devices, and industrial IoT systems.
+                            </p>
+                            <div class="mt-2">
+                                <span class="security-badge">In Progress</span>
+                            </div>
+                        </div>
+                        
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <h3 class="font-semibold text-lg">Digital Forensics Research</h3>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Advanced techniques in digital forensics, malware analysis, and incident response 
+                                for modern cyber threats and attack vectors.
+                            </p>
+                            <div class="mt-2">
+                                <span class="security-badge">Ongoing</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Published Research -->
+                <section class="professional-card p-6">
+                    <h2 class="text-xl font-bold mb-4 flex items-center">
+                        <Icon name="fa6-solid:file-lines" class="mr-3 text-green-600" />
+                        Published Research
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-purple-500 pl-4">
+                            <h3 class="font-semibold text-lg">Bangladesh Digital Ecosystem Security Assessment</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-2">
+                                Comprehensive analysis of cybersecurity vulnerabilities in Bangladesh's institutional networks, 
+                                including credential exposure analysis and systemic weakness identification.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="threat-badge">Critical Findings</span>
+                                <span class="security-badge">OSINT Research</span>
+                            </div>
+                        </div>
+                        
+                        <div class="border-l-4 border-orange-500 pl-4">
+                            <h3 class="font-semibold text-lg">IoT Penetration Testing Methodology</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-2">
+                                Development of systematic approaches for testing IoT device security, 
+                                including firmware analysis, network security assessment, and physical security evaluation.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="security-badge">Methodology</span>
+                                <span class="security-badge">IoT Security</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Bug Bounty Research -->
+                <section class="professional-card p-6">
+                    <h2 class="text-xl font-bold mb-4 flex items-center">
+                        <Icon name="fa6-solid:shield-halved" class="mr-3 text-red-600" />
+                        Bug Bounty Research
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="border-l-4 border-blue-500 pl-4">
+                                <h3 class="font-semibold text-lg">Web Application Security</h3>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm">
+                                    Research on OWASP Top 10 vulnerabilities, API security testing, 
+                                    and advanced web application penetration techniques.
+                                </p>
+                            </div>
+                            
+                            <div class="border-l-4 border-green-500 pl-4">
+                                <h3 class="font-semibold text-lg">API Security Testing</h3>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm">
+                                    Specialized research in REST and GraphQL API security, 
+                                    authentication bypass techniques, and business logic flaws.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg">
+                            <h4 class="font-semibold mb-2">Recognition from Major Organizations:</h4>
+                            <div class="grid grid-cols-2 md:grid-cols-3 gap-2 text-sm">
+                                <div class="flex items-center">
+                                    <Icon name="fa6-brands:microsoft" class="mr-2 text-blue-600" />
+                                    Microsoft
+                                </div>
+                                <div class="flex items-center">
+                                    <Icon name="fa6-solid:building" class="mr-2 text-gray-600" />
+                                    Sony
+                                </div>
+                                <div class="flex items-center">
+                                    <Icon name="fa6-solid:flag" class="mr-2 text-orange-600" />
+                                    Dutch Government
+                                </div>
+                                <div class="flex items-center">
+                                    <Icon name="fa6-solid:building" class="mr-2 text-purple-600" />
+                                    Visma
+                                </div>
+                                <div class="flex items-center">
+                                    <Icon name="fa6-solid:flag" class="mr-2 text-red-600" />
+                                    Singapore Government
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Research Tools & Techniques -->
+                <section class="professional-card p-6">
+                    <h2 class="text-xl font-bold mb-4 flex items-center">
+                        <Icon name="fa6-solid:tools" class="mr-3 text-indigo-600" />
+                        Research Tools & Techniques
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-semibold mb-3">Penetration Testing Tools</h3>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center">
+                                    <Icon name="fa6-solid:check" class="mr-2 text-green-500" />
+                                    Burp Suite Professional
+                                </li>
+                                <li class="flex items-center">
+                                    <Icon name="fa6-solid:check" class="mr-2 text-green-500" />
+                                    OWASP ZAP
+                                </li>
+                                <li class="flex items-center">
+                                    <Icon name="fa6-solid:check" class="mr-2 text-green-500" />
+                                    Nmap & Masscan
+                                </li>
+                                <li class="flex items-center">
+                                    <Icon name="fa6-solid:check" class="mr-2 text-green-500" />
+                                    Metasploit Framework
+                                </li>
+                                <li class="flex items-center">
+                                    <Icon name="fa6-solid:check" class="mr-2 text-green-500" />
+                                    Wireshark & tcpdump
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h3 class="font-semibold mb-3">Digital Forensics Tools</h3>
+                            <ul class="space-y-2 text-sm">
+                                <li class="flex items-center">
+                                    <Icon name="fa6-solid:check" class="mr-2 text-green-500" />
+                                    Autopsy
+                                </li>
+                                <li class="flex items-center">
+                                    <Icon name="fa6-solid:check" class="mr-2 text-green-500" />
+                                    Volatility
+                                </li>
+                                <li class="flex items-center">
+                                    <Icon name="fa6-solid:check" class="mr-2 text-green-500" />
+                                    YARA Rules
+                                </li>
+                                <li class="flex items-center">
+                                    <Icon name="fa6-solid:check" class="mr-2 text-green-500" />
+                                    Cuckoo Sandbox
+                                </li>
+                                <li class="flex items-center">
+                                    <Icon name="fa6-solid:check" class="mr-2 text-green-500" />
+                                    Wazuh + ELK Stack
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Research Methodology -->
+                <section class="professional-card p-6">
+                    <h2 class="text-xl font-bold mb-4 flex items-center">
+                        <Icon name="fa6-solid:microscope" class="mr-3 text-teal-600" />
+                        Research Methodology
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <div class="text-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+                                <Icon name="fa6-solid:search" class="text-2xl text-blue-600 mb-2" />
+                                <h3 class="font-semibold">Reconnaissance</h3>
+                                <p class="text-sm text-gray-600 dark:text-gray-300">
+                                    Systematic information gathering and target analysis
+                                </p>
+                            </div>
+                            
+                            <div class="text-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+                                <Icon name="fa6-solid:crosshairs" class="text-2xl text-red-600 mb-2" />
+                                <h3 class="font-semibold">Vulnerability Assessment</h3>
+                                <p class="text-sm text-gray-600 dark:text-gray-300">
+                                    Comprehensive testing and vulnerability identification
+                                </p>
+                            </div>
+                            
+                            <div class="text-center p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+                                <Icon name="fa6-solid:file-shield" class="text-2xl text-green-600 mb-2" />
+                                <h3 class="font-semibold">Documentation</h3>
+                                <p class="text-sm text-gray-600 dark:text-gray-300">
+                                    Detailed reporting and responsible disclosure
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact for Collaboration -->
+                <section class="professional-card p-6 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-gray-800 dark:to-gray-700">
+                    <h2 class="text-xl font-bold mb-4 flex items-center">
+                        <Icon name="fa6-solid:handshake" class="mr-3 text-blue-600" />
+                        Research Collaboration
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        I'm always interested in collaborating on cybersecurity research projects, 
+                        sharing knowledge, and contributing to the security community.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="mailto:kamrulhassan7740@gmail.com" 
+                           class="btn-security inline-flex items-center">
+                            <Icon name="fa6-solid:envelope" class="mr-2" />
+                            Contact Me
+                        </a>
+                        <a href="https://linkedin.com/in/kamrul-hassan-x64" 
+                           class="btn-regular inline-flex items-center" target="_blank">
+                            <Icon name="fa6-brands:linkedin" class="mr-2" />
+                            LinkedIn
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</MainGridLayout>

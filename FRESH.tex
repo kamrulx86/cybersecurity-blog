@@ -1,0 +1,309 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{multirow}
+
+% Colors
+\definecolor{primaryblue}{RGB}{30,60,114}
+\definecolor{secondaryblue}{RGB}{42,82,152}
+\definecolor{accentorange}{RGB}{243,156,18}
+\definecolor{lightgray}{RGB}{248,249,250}
+\definecolor{darkgray}{RGB}{44,62,80}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primaryblue,
+    urlcolor=primaryblue,
+    citecolor=primaryblue
+}
+
+% Section formatting
+\titleformat{\section}
+{\color{primaryblue}\Large\bfseries}
+{\thesection}{1em}{}
+[\color{primaryblue}\titlerule]
+
+\titleformat{\subsection}
+{\color{secondaryblue}\large\bfseries}
+{\thesubsection}{1em}{}
+
+% Custom commands
+\newcommand{\resumeitem}[1]{\item\small{#1}}
+\newcommand{\resumesubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumesubitem}[1]{\resumeitem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumesubheadingliststart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumesubheadinglistend}{\end{itemize}}
+\newcommand{\resumeitemliststart}{\begin{itemize}}
+\newcommand{\resumeitemlistend}{\end{itemize}\vspace{-5pt}}
+
+% Header with photo
+\newcommand{\header}[6]{
+  \begin{center}
+    \begin{minipage}{0.3\textwidth}
+      \includegraphics[width=3cm,height=3cm,keepaspectratio]{mypic.jpg}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.65\textwidth}
+      {\Huge\bfseries\color{primaryblue} #1}\\[0.5em]
+      {\Large\color{secondaryblue} #2}\\[0.3em]
+      \begin{tabular}{ll}
+        \textcolor{primaryblue}{$\bullet$} & #3 \\
+        \textcolor{primaryblue}{$\bullet$} & #4 \\
+        \textcolor{primaryblue}{$\bullet$} & #5 \\
+        \textcolor{primaryblue}{$\bullet$} & \href{https://linkedin.com/in/kamrul-hassan-x64}{#6} \\
+        \textcolor{primaryblue}{$\bullet$} & \href{https://kamroot.com}{kamroot.com} \\
+        \textcolor{primaryblue}{$\bullet$} & Bangladeshi National
+      \end{tabular}
+    \end{minipage}
+  \end{center}
+  \vspace{-10pt}
+}
+
+\begin{document}
+
+% Header
+\header{Kamrul Hassan}{Cybersecurity Engineer}{Ishandi Sarkar Road, Tongi, Gazipur – 1712, Bangladesh}{+880 1780 080002}{kamrulhassan7740@gmail.com}{linkedin.com/in/kamrul-hassan-x64}
+
+% Professional Summary
+\section{Professional Summary}
+\small{
+Recent Computer Science graduate with strong foundation in cybersecurity, penetration testing, and network security. Demonstrated expertise through successful bug bounty programs and recognition from major tech companies including Microsoft and Sony. Passionate about cybersecurity with hands-on experience in vulnerability assessment, digital forensics, and security research. Eager to contribute to organizational security posture and grow in the cybersecurity field. Committed to continuous learning and staying updated with latest security trends and technologies.
+}
+
+% Education
+\section{Education}
+\resumesubheadingliststart
+\resumesubheading
+{Bachelor of Science in Computer Science \& Engineering}{2020 -- 2024}
+{World University of Bangladesh}{Dhaka, Bangladesh}
+\resumeitemliststart
+\resumeitem{Relevant Coursework: Network Security, Database Systems, Operating Systems, Data Structures \& Algorithms}
+\resumeitem{Final Year Project: IoT Security Research and Penetration Testing}
+\resumeitem{Academic Focus: Cybersecurity, Information Security, and Ethical Hacking}
+\resumeitemlistend
+
+\resumesubheading
+{Higher Secondary Certificate (Science)}{2017 -- 2019}
+{Lalmai Govt. College}{Cumilla, Bangladesh}
+\resumeitemliststart
+\resumeitemlistend
+
+\resumesubheading
+{Secondary School Certificate (Science)}{2017}
+{Harishchar Union High School \& College}{Cumilla, Bangladesh}
+\resumeitemliststart
+\resumeitemlistend
+\resumesubheadinglistend
+
+% Technical Skills
+\section{Technical Skills}
+\begin{multicols}{2}
+\subsection{Programming \& Scripting}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\begin{itemize}
+\item Python (Security Automation, Scripting)
+\item Bash/Shell Scripting
+\item Go (Basic)
+\item C/C++ (System Programming)
+\end{itemize}
+}}
+\end{itemize}
+
+\subsection{Penetration Testing \& Security}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\begin{itemize}
+\item Web Application Security Testing
+\item Network Penetration Testing
+\item Wireless Security Assessment
+\item Vulnerability Assessment
+\item Blackbox and white box testing
+\item IoT Penetration Testing
+\item OWASP Top 10 Testing
+\item API Security Testing
+\end{itemize}
+}}
+\end{itemize}
+
+\subsection{Security Tools \& Technologies}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\begin{itemize}
+\item Burp Suite, OWASP ZAP
+\item Nmap, Metasploit
+\item Wireshark, tcpdump
+\item Kali Linux, Arch Linux
+\end{itemize}
+}}
+\end{itemize}
+
+\subsection{Network \& System Administration}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\begin{itemize}
+\item Linux System Administration
+\item Windows Server Administration
+\item Network Configuration \& Troubleshooting
+\item Firewall Configuration (iptables, UFW)
+\item VPN Configuration
+\item Cloud Platforms (AWS, Azure basics)
+\end{itemize}
+}}
+\end{itemize}
+
+\subsection{Digital Forensics \& Incident Response}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\begin{itemize}
+\item Digital Forensics Analysis
+\item Malware Analysis
+\item Log Analysis \& Investigation
+\item Incident Response Procedures
+\item Evidence Collection
+\item PCAP Analysis
+\end{itemize}
+}}
+\end{itemize}
+
+\subsection{OSINT \& Threat Intelligence}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\begin{itemize}
+\item Open Source Intelligence Gathering
+\item Social Media Intelligence
+\item Threat Intelligence Analysis
+\item Credential Leak Analysis
+\item Phishing Investigation
+\end{itemize}
+}}
+\end{itemize}
+\end{multicols}
+
+% Projects \& Experience
+\section{Projects \& Practical Experience}
+\resumesubheadingliststart
+\resumesubheading
+{Bug Bounty Hunter \& Security Researcher}{2021 -- Present}
+{Self-Directed Learning \& Practice}{Remote}
+\resumeitemliststart
+\resumeitem{Successfully identified and reported multiple critical vulnerabilities across various web applications and APIs}
+\resumeitem{Recognized by Microsoft, Sony, Dutch Government, Visma, and Singapore Government for responsible disclosure}
+\resumeitem{Specialized in web application security testing, API security, and infrastructure penetration testing}
+\resumeitem{Developed custom scripts and tools for automated security testing and reconnaissance}
+\resumeitemlistend
+
+\resumesubheading
+{Cybersecurity Researcher}{July 2024 -- Present}
+{TheTeamPhoenix}{Dhaka, Bangladesh}
+\resumeitemliststart
+\resumeitem{Conducted cybersecurity research and threat intelligence analysis}
+\resumeitem{Performed OSINT investigations and monitored underground forums for emerging threats}
+\resumeitem{Collaborated with team members on various security research projects and initiatives}
+\resumeitemlistend
+
+\resumesubheading
+{IoT Security Research Project}{2024}
+{Final Year Project}{World University of Bangladesh}
+\resumeitemliststart
+\resumeitem{Conducted comprehensive penetration testing on IP cameras and IoT devices}
+\resumeitem{Performed firmware extraction and reverse engineering analysis}
+\resumeitem{Analyzed API misconfigurations and security vulnerabilities in IoT ecosystems}
+\resumeitem{Presented findings to faculty and industry professionals}
+\resumeitemlistend
+
+\resumesubheading
+{Home SOC Lab Setup}{2024}
+{Personal Learning Project}{Home Lab}
+\resumeitemliststart
+\resumeitem{Built a Security Operations Center using Wazuh + ELK Stack}
+\resumeitem{Implemented log monitoring, detection, and visualization systems}
+\resumeitem{Monitored and analyzed security events in real-time environment}
+\resumeitemlistend
+
+\resumesubheading
+{Digital Ecosystem Security Research}{2024}
+{Research Project}{Bangladesh}
+\resumeitemliststart
+\resumeitem{Investigated unauthorized access risks across institutional networks in Bangladesh}
+\resumeitem{Analyzed credential exposures and systemic weaknesses in national digital infrastructure}
+\resumeitem{Utilized OSINT and breach data for comprehensive security assessment}
+\resumeitem{Provided recommendations for improving Bangladesh's national cybersecurity posture}
+\resumeitemlistend
+\resumesubheadinglistend
+
+% Achievements \& Recognition
+\section{Achievements \& Recognition}
+\begin{multicols}{2}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\begin{itemize}
+\item \textbf{Microsoft:} Recognized for responsible vulnerability disclosure in Microsoft products
+\item \textbf{Sony:} Acknowledged for identifying critical API security flaws
+\item \textbf{Dutch Government:} Credited for responsible disclosure of cybersecurity issues
+\item \textbf{Visma:} Listed in official Hall of Fame for application security contributions
+\item \textbf{Singapore Government:} Recognized for reporting critical web vulnerabilities
+\end{itemize}
+}}
+\end{itemize}
+\end{multicols}
+
+% Certifications \& Training
+\section{Certifications \& Training}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\begin{itemize}
+\item \textbf{Self-Studied:} OWASP Top 10, Ethical Hacking, Penetration Testing
+\item \textbf{Online Courses:} Cybersecurity fundamentals, Network security, Digital forensics
+\item \textbf{Practical Training:} Bug bounty platforms, CTF competitions, Security labs
+\item \textbf{Continuous Learning:} Staying updated with latest security trends and vulnerabilities
+\item \textbf{Research:} Active participation in cybersecurity research and publications
+\end{itemize}
+}}
+\end{itemize}
+
+% Languages
+\section{Languages}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\begin{itemize}
+\item \textbf{Bengali:} Native proficiency
+\item \textbf{English:} Fluent (Reading, Writing, Speaking)
+\item \textbf{Hindi:} Conversational
+\end{itemize}
+}}
+\end{itemize}
+
+% Professional References
+\section{References}
+\begin{multicols}{2}
+\subsection{A. S. M. Shamim Reza}
+\textit{Founder \& Chief of Research, TheTeamPhoenix}\\
+Wazuh Ambassador | APNIC Contract\\
+Phone: 01601-445773\\
+Email: sohag.shamim@gmail.com
+
+\subsection{Shakil Rahman}
+\textit{Chief Executive Officer, Gotmyhost}\\
+Phone: 01601-445773\\
+\end{multicols}
+
+\end{document}
